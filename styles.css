@@ -119,9 +119,9 @@ h1 {
 }
 
 .btn {
-    background-color: #E6E6FA; /* Lila claro */
-    border: 2px solid #8A2BE2; /* Borde lila oscuro */
-    color: #8A2BE2;
+    background-color: #8A2BE2; /* Lila claro */
+    border: 2px solid #E6E6FA; /* Borde lila oscuro */
+    color: #E6E6FA;
     padding: 10px 20px;
     text-align: center;
     font-size: 1rem;
@@ -133,7 +133,7 @@ h1 {
 }
 
 .btn:hover {
-    background-color: #8A2BE2;
+    background-color: #ae6fe9;
     color: white;
 }
 
@@ -560,11 +560,11 @@ footer a:hover {
         width: 100%; /* Asegurarse de que ocupen todo el ancho disponible */
     }
 
-    .textq{
-        /* text-align: center;
+    /* .textq{
+        text-align: center;
         display: flex;
-        justify-content: center; */
-    }
+        justify-content: center;
+    } */
     
     .titleq{
     display: block;
