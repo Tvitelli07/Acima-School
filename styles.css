@@ -1,0 +1,541 @@
+/* Global Styles */
+body {
+    background-image: url('img/principal/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Navbar */
+.navbar {
+    height: 100px; /* Aumentar la altura del navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: relative;
+}
+
+.hamburger {
+    font-size: 3rem; /* Ícono del menú más grande */
+    cursor: pointer;
+    color: black;
+}
+
+.title-logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+}
+
+/* Redes sociales del Navbar */
+.social {
+    display: flex;
+    gap: 10px; /* Espacio entre los íconos */
+}
+
+.social i {
+    font-size: 3rem; /* Íconos sociales más grandes */
+    color: #333;
+    transition: 0.3s;
+}
+
+.social i:hover {
+    color: #ffffff;
+}
+
+/* Full Screen Menu Overlay */
+.menu-overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.menu-overlay .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu-content a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.menu-content a:hover {
+    color: #663399;
+}
+
+/* Botones interconectados */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #E6E6FA; /* Lila claro */
+    border: 2px solid #8A2BE2; /* Borde lila oscuro */
+    color: #8A2BE2;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #8A2BE2;
+    color: white;
+}
+
+/* Centrar los títulos debajo de los botones */
+.titleustedes {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Galería de imágenes para 4 columnas */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    grid-gap: 15px; /* Espacio entre las imágenes */
+    margin: 20px auto; /* Añadir margen superior e inferior */
+    width: 95%;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 450px; /* Mantener un tamaño uniforme para todas las imágenes */
+    object-fit: cover; /* Ajustar las imágenes para que no se deformen */
+    border-radius: 10px;
+}
+
+/* Styling for the container that holds the first two sections */
+.container {
+    display: flex;
+    justify-content: space-between; /* Make the first and second sections appear side by side */
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure it takes the full width of the screen */
+}
+
+/* Styling for the first and second sections */
+.left-section, .right-section {
+    width: 48%; /* Each section takes up 48% of the width */
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-section h2, .right-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-video-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    width: 45%;
+    text-align: left;
+}
+
+.video {
+    width: 50%;
+    overflow: hidden; /* Necesario para que el border-radius funcione en videos */
+}
+
+video {
+    width: 100%;
+    height: 600px;
+    border-radius: 5px;
+}
+
+/* Estilo para la sección del mapa */
+.lower-section {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 250px; /* Ajusta la altura del mapa */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lower-section .info {
+    width: 25%; /* Título y párrafo ocupan el 25% */
+    text-align: center;
+}
+
+.lower-section h2 {
+    margin-bottom: 10px;
+}
+
+.lower-section p {
+    margin-top: auto;
+}
+
+.lower-section .map {
+    width: 75%; /* El mapa ocupa el 75% */
+    height: 100%; /* Asegura que ocupe toda la altura */
+    border-radius: 10px;
+}
+
+.lower-section .map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.textq {
+    font-size: 1.8rem;
+}
+
+/* Footer */
+footer {
+    background-color: #663399;
+    color: white;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    width: 25%;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-footer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 10px;
+    width: 100%;
+}
+
+/* Imagenes debajo del navbar */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px; /* Espacio entre imágenes */
+    margin: 40px 0;
+}
+
+.slider-item {
+    position: relative;
+    width: 27%; /* Ajustado a la mitad del tamaño anterior */
+}
+
+.slider-item img {
+    width: 100%;
+    border-radius: 15px;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.overlay-text {
+    opacity: 0; /* El texto está oculto inicialmente */
+    transition: opacity 0.3s ease; /* Transición suave */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Texto en negro */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(102, 51, 153, 0.8); /* Fondo violeta */
+    padding: 10px;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Mostrar el texto y efecto de difuminado al hacer hover */
+.slider-item:hover img {
+    filter: blur(3px); /* Difumina la imagen al hacer hover */
+    opacity: 0.7; /* Opaca ligeramente la imagen al hacer hover */
+}
+
+.slider-item:hover .overlay-text {
+    opacity: 1; /* Mostrar el texto al hacer hover */
+}
+
+/* Estilo para los beneficios */
+.benefit {
+    width: 20%; /* Más pequeño y alineado horizontalmente */
+    text-align: center;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.benefit img {
+    width: 100px;
+    height: 100px;
+}
+
+.benefits-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    gap: 15px;
+}
+
+.socialr{
+    display: none;
+}
+
+/* Ajustes específicos solo para el logo, íconos y menú hamburguesa en móvil */
+@media screen and (max-width: 768px) {
+
+    .socialr {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Espacio entre los íconos */
+        padding-top: 50px;
+    }
+    
+    .socialr i {
+        font-size: 3rem; /* Íconos sociales más grandes */
+        color: #333;
+        transition: 0.3s;
+    }
+    
+    .socialr i:hover {
+        color: #ffffff;
+    }
+    
+    
+    /* Navbar vertical y centrado */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 30px; /* Añadir suficiente espacio debajo del navbar */
+    }
+
+    /* Eliminar el texto de contacto */
+    .contact-text {
+        display: none;
+    }
+
+    /* Logo centrado con mayor margen inferior */
+    .logo {
+        max-width: 100px; /* Ajustar el tamaño del logo */
+        margin-bottom: 40px; /* Añadir margen debajo del logo */
+        margin-top: 20px;
+    }
+
+    /* Íconos de redes sociales centrados con espacio debajo */
+    .social {
+        display: none;
+    }
+
+    /* Menú hamburguesa centrado */
+    .hamburger {
+        font-size: 2.5rem;
+        margin-bottom: 25px; /* Asegura espacio suficiente debajo del menú hamburguesa */
+    }
+
+    /* Separación entre navbar y las imágenes */
+    .image-container {
+        margin-top: 30px; /* Espacio entre las imágenes y el navbar */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .slider-item {
+        width: 90%; /* Ocupa el 90% del ancho disponible */
+        margin-bottom: 20px; /* Espacio entre imágenes */
+    }
+
+    .slider-item img {
+        width: 100%; /* Asegura que las imágenes se adapten */
+        border-radius: 10px;
+    }
+
+    /* Imágenes para que estén apiladas */
+    .image-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .image-grid img {
+        width: 80%; /* Aseguramos que las imágenes se adapten al tamaño del dispositivo */
+        height: auto;
+    }
+
+    /* Ajuste de los beneficios */
+    .benefits-section {
+        flex-direction: column;
+    }
+
+    .benefit {
+        width: 80%; /* Se amplían las imágenes para dispositivos móviles */
+        margin-bottom: 20px;
+    }
+
+    .benefit p {
+        display: none; /* Eliminar el texto en móviles */
+    }
+
+    /* Footer centrado verticalmente */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Botones interconectados en Jardín, Primaria y Secundaria */
+    .nav-buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-buttons .btn {
+        width: 80%;
+    }
+
+    /* Ajustes en ¿Quiénes Somos? */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrar los textos y videos */
+        gap: 20px; /* Espacio entre los elementos */
+    }
+
+    /* Sección izquierda y derecha centrada */
+    .left-section, .right-section {
+        width: 100%;
+        text-align: center; /* Centrar el texto */
+    }
+
+    /* Ajuste de los videos debajo del texto */
+    .video {
+
+        width: 100%;
+        height: auto;
+        margin-top: 20px; /* Añadir espacio entre el texto y el video */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        max-width: 600px; /* Limitar el tamaño máximo del video */
+    }
+
+    /* Estilos para el último section (mapa) */
+    .lower-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* Espacio entre el texto y el mapa */
+    }
+
+    .lower-section h2 {
+        text-align: center; /* Título centrado */
+    }
+
+    .lower-section p {
+        text-align: center; /* Texto centrado */
+    }
+
+    .lower-section .map {
+        width: 100%;
+        max-width: 600px; /* Limitar el tamaño máximo del mapa */
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .lower-section .map iframe {
+        width: 100%;
+        height: 300px; /* Ajuste de altura del mapa */
+    }
+}
