@@ -370,27 +370,24 @@ footer a:hover {
         display: flex;
         justify-content: center;
         gap: 10px; /* Espacio entre los íconos */
-        padding-top: 50px;
+        
     }
-    
+
     .socialr i {
         font-size: 3rem; /* Íconos sociales más grandes */
         color: #333;
         transition: 0.3s;
     }
-    
+
     .socialr i:hover {
-        color: #ffffff;
+        color: #663399;
     }
-    
-    
+
     /* Navbar vertical y centrado */
     .navbar {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        padding: 10px;
-        margin-bottom: 30px; /* Añadir suficiente espacio debajo del navbar */
     }
 
     /* Eliminar el texto de contacto */
@@ -401,8 +398,7 @@ footer a:hover {
     /* Logo centrado con mayor margen inferior */
     .logo {
         max-width: 100px; /* Ajustar el tamaño del logo */
-        margin-bottom: 40px; /* Añadir margen debajo del logo */
-        margin-top: 20px;
+        margin-bottom: 20px; /* Espacio extra debajo del logo */
     }
 
     /* Íconos de redes sociales centrados con espacio debajo */
@@ -413,7 +409,23 @@ footer a:hover {
     /* Menú hamburguesa centrado */
     .hamburger {
         font-size: 2.5rem;
-        margin-bottom: 25px; /* Asegura espacio suficiente debajo del menú hamburguesa */
+        margin-bottom: 30px; /* Asegura espacio suficiente debajo del menú hamburguesa */
+    }
+
+    /* Centrar los botones de Jardín, Primaria, Secundario */
+    .nav-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Asegura que los botones estén centrados */
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .nav-buttons .btn {
+        width: 80%; /* Asegura que los botones ocupen un buen espacio en móviles */
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 5px;
     }
 
     /* Separación entre navbar y las imágenes */
@@ -455,7 +467,7 @@ footer a:hover {
 
     .benefit {
         width: 80%; /* Se amplían las imágenes para dispositivos móviles */
-        margin-bottom: 20px;
+        margin-bottom: 30px; /* Aumentar el margen entre los beneficios */
     }
 
     .benefit p {
@@ -494,25 +506,28 @@ footer a:hover {
 
     /* Sección izquierda y derecha centrada */
     .left-section, .right-section {
-        width: 100%;
+        width: 80%;
         text-align: center; /* Centrar el texto */
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center; */
     }
 
     /* Ajuste de los videos debajo del texto */
     .video {
-
         width: 100%;
         height: auto;
         margin-top: 20px; /* Añadir espacio entre el texto y el video */
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         flex-direction: column;
-
         max-width: 600px; /* Limitar el tamaño máximo del video */
     }
 
     /* Estilos para el último section (mapa) */
     .lower-section {
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -529,7 +544,7 @@ footer a:hover {
 
     .lower-section .map {
         width: 100%;
-        max-width: 600px; /* Limitar el tamaño máximo del mapa */
+        max-width: 400px; /* Limitar el tamaño máximo del mapa */
         height: auto;
         border-radius: 10px;
     }
@@ -537,5 +552,21 @@ footer a:hover {
     .lower-section .map iframe {
         width: 100%;
         height: 300px; /* Ajuste de altura del mapa */
+    }
+
+    /* Asegurarse de que todos los enlaces del menú estén centrados */
+    .menu-content a {
+        text-align: center;
+        width: 100%; /* Asegurarse de que ocupen todo el ancho disponible */
+    }
+
+    .textq{
+        /* text-align: center;
+        display: flex;
+        justify-content: center; */
+    }
+    
+    .titleq{
+    display: block;
     }
 }
