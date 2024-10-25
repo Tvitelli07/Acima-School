@@ -358,9 +358,13 @@ footer a:hover {
     display: none;
 }
 
+.container{
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
 
-    /* Ajustes generales */
+       /* Ajustes generales */
     body {
         margin: 0;
         padding: 0;
@@ -384,7 +388,6 @@ footer a:hover {
     .socialr i:hover {
         color: #663399;
     }
-
     .navbar {
         display: flex;
         flex-direction: row;
@@ -495,73 +498,69 @@ footer a:hover {
         width: 100%;
     }
 
-/* Ajuste de contenedores para evitar scroll horizontal */
-.conteinerq {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 0 10px;
-    box-sizing: border-box;
-}
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
 
-.left, .right, .lower {
-    width: 100%; /* El div ocupa el 100% */
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añadir sombra para destacar */
-}
+    .content {
+        width: 100%;
+        max-width: 600px; /* Limita el ancho para no desbordar */
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
 
-/* Títulos y textos */
-.titleq {
-    text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-}
+    .title {
+        text-align: center;
+        font-size: 1.8rem; /* Aumentar el tamaño de la fuente para móviles */
+        margin-bottom: 15px;
+    }
 
-.textq {
-    text-align: justify;
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
+    .text {
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
 
-/* Videos centrados */
-.videoq {
-    display: block;
-    margin: 0 auto;
-    width: 90%; /* El video ocupa el 90% del div */
-    max-width: 350px;
-    height: auto;
-    border-radius: 10px;
-}
+    .responsive-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
 
-/* Ajustes para el div de Ubicación */
-.lower {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+    .responsive-video {
+        display: block;
+        width: 100%;
+        max-width: 250px; /* Limitar el ancho del video */
+        height: auto;
+        margin: 0 auto;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
 
-.lower .titleq {
-    margin-bottom: 10px;
-    font-size: 2.2rem;
-}
+    .responsive-map {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+        margin: 0 auto;
+        border: none;
+        border-radius: 10px;
+    }
 
-.lower .textq {
-    margin-bottom: 15px;
-    font-size: 1.6rem;
-}
-
-.map {
-    width: 90%; /* El mapa ocupa el 90% del div */
-    max-width: 350px;
-    height: auto;
-    border-radius: 10px;
-    margin: 0 auto;
-}
+    .conteinerq{
+        display: none;
+    }
+    .lower{
+        display: none;
+    }
 }
