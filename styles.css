@@ -186,9 +186,10 @@ h1 {
 
   /* Texto dentro de las secciones */
 .textq {
-    width: 60%; /* El texto ocupa el 60% del div */
+    width: 58%; /* El texto ocupa el 60% del div */
     font-size: 2rem; /* Tamaño de la fuente */
     float: left; /* Alinea el texto a la izquierda */
+    
 }
 
   /* Video dentro de las secciones */
