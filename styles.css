@@ -363,6 +363,21 @@ footer a:hover {
     display: none;
 }
 
+.image-gridd {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    grid-gap: 15px; /* Espacio entre las imágenes */
+    margin: 20px auto; /* Añadir margen superior e inferior */
+    width: 95%;
+}
+
+.image-gridd img {
+    width: 100%;
+    height: 600px; /* Mantener un tamaño uniforme para todas las imágenes */
+    object-fit: cover; /* Ajustar las imágenes para que no se deformen */
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 768px) {
 
        /* Ajustes generales */
@@ -463,6 +478,19 @@ footer a:hover {
     }
 
     .image-grid img {
+        width: 80%; /* Asegura que las imágenes se adapten al tamaño del dispositivo */
+        height: auto;
+    }
+
+     /* Imágenes en la galería en fila */
+    .image-gridd {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .image-gridd img {
         width: 80%; /* Asegura que las imágenes se adapten al tamaño del dispositivo */
         height: auto;
     }
