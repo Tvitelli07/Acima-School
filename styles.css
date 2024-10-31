@@ -161,6 +161,11 @@ h1 {
     border-radius: 10px;
 }
 
+#nuevas{
+    width: 450px;
+    height: 300px;
+}
+
 /* Contenedor principal para los dos primeros divs */
 .conteinerq {
     display: flex;
@@ -591,5 +596,10 @@ footer a:hover {
     }
     .lower{
         display: none;
+    }
+
+    #nuevas{
+        width: 330px;
+        height: 200px;
     }
 }
